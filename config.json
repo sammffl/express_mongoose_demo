@@ -1,0 +1,79 @@
+{
+  "redirect_url": "localhost:8079/creditinvgover.htm",
+  "report_url": "localhost:8079/creditinvgfin.htm",
+  //    "calculateScore":"localhost:8079/api/v1/calculationScore",
+  "calculateScore": "http://localhost:8079/api/v1/calculateScore",
+  //    "redirect_url": "https://test.trustplus.cn/creditinvgover.htm",
+  //    "report_url": "https://test.trustplus.cn/creditinvgfin.htm",
+  "bocApi_url": "http://localhost:8079/bocApi",
+  "max_sessions": 10,
+  "min_sessions": 0,
+  "db_ip": "localhost",
+  "db_user": "root",
+  "db_password": "112358",
+  "db_dbname": "ezloan_webcapture",
+  "mongo_db_ip": "27.115.58.228",
+  "mongo_db_dbname": "xinyongjin",
+  //    "db_ip":"175.102.32.83",
+  //    "db_user":"zxhui",
+  //    "db_password":"zxhui#mti&",
+  //    "db_dbname":"zxhui",
+  //    "db_ip":"175.102.32.94",
+  //    "db_user":"zxhui_test",
+  //    "db_password":"zxhui_test#mti&",
+  //    "db_dbname":"zxhui_test",
+  //  "db_user":"xy_uat",
+  //  "db_password":"xy_uat#mti&",
+  //  "db_dbname":"xy_uat",
+
+  "ssl_key": "./sslcert/privatekey.pem",
+  "ssl_cert": "./sslcert/certificate.pem",
+  "ssl_ca": [],
+  "data_original": 1,
+  "encrypt_key": "test_ff808081487c315b01487c3fed3a0001",
+  // test
+  //    "encrypt_key": "2014#mti&ff808081487c315b01487c3fed3a0001", //
+  "save_log": 1,
+  "save_log_level": "debug",
+  //日志输出级别,六个级别 trace, debug, info, warn, error, fatal,测试时使用debug,生产时使用error即可，
+  "max_days": 365,
+  "max_item_count": 50,
+  "idle_timeout": 180,
+  //仅指用户点授权后多久不操作,提示超时并回收chrome
+  "open_url_timeout": 20,
+  //  指每个页面从打开到确认打开等待秒数,超过即此页面失败
+  "read_element_timeout": 15,
+  // 指收到成功打开页面后多久没读到正确element即此页面失败(即等待动态加载最长时间)
+  "max_catch_timeout": 600,
+  //指一个网站从登录成功到抓取结束最长花费时间上限,超过上限即本次抓取结束,根据必抓取项判断最终状态是成功还是失败
+  "max_kill_timeout": 1500,
+  //40 * 60 * 1000
+
+
+  "scrap_taobao": true,
+  "scrap_ctrip": true,
+  "scrap_telcom": true,
+  "scrap_unicom": true,
+  "scrap_cmcc": true,
+  "is_testing": 0,
+  "retry_times": 3,
+  "http_port": 8808,
+  "https_port": 8809,
+  "effective_minute": 129600,
+  //有效日期三个月
+  "dom_path": "dom",
+  "png_path": "pngs",
+  "domain": "http://localhost:8079",
+  // "https://trust-test.ezloan.cn",//index.html计算页面的实际高度js使用，iframe自适应会用到
+  "chrom_driver": "c:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+  //    "proxies": {
+  //        "extensions":"crx/a.crx",
+  //        "protocol": "http",//协议支持  http、socks5
+  //        "ip": "175.102.32.85",
+  //        "port": "9099",
+  //        "user" :  "hyron",
+  //        "password" : "passW0rd"
+  //    }
+  "proxies": []
+  //如果不需要代理使用这个
+}
